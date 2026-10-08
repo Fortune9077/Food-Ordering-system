@@ -1,0 +1,48 @@
+
+/* CSS Document */
+  body {
+    background-color:rgb(245, 245, 220) ;
+ min-height: 100vh; /* Ensures full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* Fills the space between header and footer */
+}
+
+.footer {
+    background-color: #1A1919;
+    color:rgb(245, 245, 220);
+    text-align: center;
+    padding: 10px;
+}
+
+
+.header {
+    width: 100%;
+    background: black; /* Adjust color */
+    padding: 10px 0;
+    position: fixed;    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 120px auto; /* Push it down to avoid overlapping header */
+    z-index: 10; /* Ensures it appears above other elements */
+}
+
+        .btn-brown {
+            background-color: brown;
+            color: white;
+        }
+        .btn-brown:hover {
+            background-color: darkred;
+        }

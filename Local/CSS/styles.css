@@ -1,0 +1,55 @@
+/* Ensure full‐height flex layout */
+html {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(245, 245, 220);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Your existing navbar styles… */
+
+.main-content {
+  flex: 1;   /* grow to push footer down */
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  height: 100px;
+  width: 100%;
+
+  margin-top: auto;  /* stick to bottom when content is short */
+}
+
+/* Footer inner container */
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer links */
+.footer-links {
+  margin-top: 10px;
+}
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+

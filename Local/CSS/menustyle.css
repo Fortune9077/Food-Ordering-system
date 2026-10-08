@@ -1,0 +1,133 @@
+body {
+  background-color: rgb(245, 245, 220);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar (fixed on desktop, full-width on mobile) */
+.sidebar {
+  position: flex;
+  top: 80px;
+  left: 0;
+  width: 250px;
+  height: calc(800vh -0px);
+  background-color: #D2B48C;
+  padding-top: 20px;
+  border-right: 2px solid #ddd;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #c0a16b;
+}
+
+/* Content */
+.content {
+  margin-left: 270px;
+  padding: 20px;
+  padding-top: 100px;
+  flex: 1;
+}
+
+/* Menu Section */
+.menu-section {
+  margin-bottom: 60px;
+}
+
+.menu-section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Menu Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.menu-item h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.menu-item p {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.menu-item button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-item button:hover {
+  background-color: #555;
+}
+
+/* Responsive: Make sidebar drop above content on smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    border-right: none;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .content {
+    margin-left: 0;
+    padding-top: 20px;
+  }
+
+  .page-wrapper {
+    flex-direction: column;
+  }
+}
+
+

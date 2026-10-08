@@ -1,0 +1,1 @@
+UPDATE users SET firstname = 'KOO', lastname = 'wee', Address = 'Eastern Community Campus, Trowbridge Road, Cardiff CF3 1XZ', postcode = 'CF23 8XJ' WHERE email = 'YOU@gmail.com'
